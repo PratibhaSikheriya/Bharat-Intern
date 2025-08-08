@@ -6,12 +6,14 @@
 }
 
 body {
-    background: url('img/images.jpeg') no-repeat center center fixed; /* Using one of your uploaded images as an example */
+    /* Set a default background image on load */
+    background: url('img/download.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* This transition makes the background change smooth */
     transition: background-image 1s ease-in-out;
 }
 
@@ -63,6 +65,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     font-size: 16px;
+    flex-shrink: 0; /* Prevents the button from shrinking */
 }
 
 /* Style for the error message */
@@ -153,4 +156,65 @@ footer {
     bottom: 20px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
+}
+
+/* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
+@media (max-width: 480px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    .search input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .city {
+        font-size: 2rem;
+    }
+
+    .temp {
+        font-size: 4rem;
+    }
+
+    .weatherIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .tempMaxMin {
+        font-size: 0.9rem;
+    }
+
+    .details {
+        padding: 0 5px;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    .col .humidity, .col .wind {
+        font-size: 1rem;
+    }
+    
+    .col div {
+        font-size: 0.8rem;
+    }
+    
+    .col i {
+        font-size: 1.5em; /* Makes font-awesome icons scale with text */
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
