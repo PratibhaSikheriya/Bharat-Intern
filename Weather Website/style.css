@@ -6,91 +6,126 @@
 }
 
 body {
-    background: url('data:image/jpeg;base64,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') no-repeat center center fixed;
+    background: url('img/images.jpeg') no-repeat center center fixed; /* Using one of your uploaded images as an example */
     background-size: cover;
     height: 100vh;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-image 1s ease-in-out;
 }
 
 .card {
     width: 90%;
     max-width: 400px;
-    background-color: #6666661d;
-    backdrop-filter: blur(1px);
-    border: 1px solid #ccc;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     text-align: center;
-    border-radius: 20px;
-    padding: 40px 35px;
-    margin: 100px auto 0;
+    border-radius: 25px;
+    padding: 30px 35px;
 }
 
-.card .search input {
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    flex: 1;
-    margin-right: 16px;
-    border: 1px solid #f1f1f1;
-    background: transparent;
-    color: #f1f1f1;
-}
-
-.card .search {
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
-.weather .weatherIcon {
-    height: 130px;
-    width: 130px;
+.search input {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
+    font-size: 16px;
 }
 
-.weather .city {
-    margin-top: 10px;
+.search input::placeholder {
+    color: #ddd;
 }
 
-.weather h1 {
-    margin-top: -10px;
-    font-size: 50px;
-    font-weight: 200;
-}
-
-.weather h2 {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.weather .tempMaxMin {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.description {
-    font-style: italic;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.card .search button {
+.search button {
     border-radius: 50%;
     border: none;
     outline: none;
-    padding: 10px 13px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Style for the error message */
+.error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffabab;
+    display: none; /* Hidden by default */
+}
+
+/* Hide weather and details by default */
+.weather, .details {
+    display: none;
+}
+
+
+.city {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.temp-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.temp {
+    font-size: 5rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.weatherIcon {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.tempMaxMin {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 5px;
+    color: #ddd;
 }
 
 .details {
-    display: flex;
+    /* This will be changed to display: flex in JS */
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
+    padding: 0 10px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
 }
 
 .col {
@@ -99,22 +134,23 @@ body {
     text-align: left;
 }
 
+.col i {
+    color: #ddd;
+}
+
 .col div {
-    margin-left: 5px;
-    font-size: 12px;
+    margin-left: 10px;
     font-weight: 300;
 }
 
-.col .humidity {
-    font-size: 15px;
-}
-
-.col .wind {
-    font-size: 15px;
+.col .humidity, .col .wind {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #f1f1f1;
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
 }
